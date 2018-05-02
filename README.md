@@ -10,6 +10,7 @@ FigureX.m files will generate the specified plots from the paper by loading beha
 
 The paths in these scripts require altering the directory variable ‘repoBase’ to point to your local version of the repository.
 
+Unthresholded group-level statistical maps for main fMRI analyses reported in the paper are available on NeuroVault: https://neurovault.org/collections/3792/.
 
 **Folders**
 
@@ -35,4 +36,4 @@ Contains scripts for permutation testing for analysis of ROI activity time cours
 
 *SPM*
 
-Contains scripts for GLMs of fMRI data. The pipeline for pre-processing of fMRI data is freely available: https://github.com/metacoglab/MetaLabCore. Unthresholded group-level statistical maps for analyses reported in the paper are available on NeuroVault: https://neurovault.org/collections/3792/. FMRI pre-processing and analysis were conducted using SPM 12 (www.fil.ion.ucl.ac.uk/spm). 
+Contains scripts for setting up GLMs of fMRI data. fMRI data were pre-processed using standard pipelines available here: https://github.com/metacoglab/MetaLabCore. All fMRI analyses were done using SPM 12 (www.fil.ion.ucl.ac.uk/spm). 
