@@ -35,4 +35,4 @@ Contains scripts for permutation testing for analysis of ROI activity time cours
 
 *SPM*
 
-Contains scripts for GLMs of fMRI data using SPM 12 (www.fil.ion.ucl.ac.uk/spm).  The fMRI data were pre-processed using standard pipelines (https://github.com/metacoglab/MetaLabCore). Unthresholded group-level statistical maps from analyses reported in the paper are available on NeuroVault (https://neurovault.org/collections/3792/).
+Contains scripts for GLMs of fMRI data. The pipeline for pre-processing of fMRI data is freely available: https://github.com/metacoglab/MetaLabCore. Unthresholded group-level statistical maps for analyses reported in the paper are available on NeuroVault: https://neurovault.org/collections/3792/. FMRI pre-processing and analysis were conducted using SPM 12 (www.fil.ion.ucl.ac.uk/spm). 
