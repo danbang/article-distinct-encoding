@@ -10,7 +10,7 @@ FigureX.m files will generate the specified plots from the paper by loading beha
 
 The paths in these scripts require altering the directory variable ‘repoBase’ to point to your local version of the repository.
 
-**Folders
+**Folders**
 
 *Custom
 Contains custom scripts for data extraction and plotting.
