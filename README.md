@@ -37,3 +37,5 @@ Contains scripts for permutation testing for analysis of ROI activity time cours
 *SPM*
 
 Contains scripts for setting up GLMs of fMRI data. fMRI data were pre-processed using standard pipelines available here: https://github.com/metacoglab/MetaLabCore. All fMRI analyses were done using SPM 12 (www.fil.ion.ucl.ac.uk/spm). 
+
+This code is being released with a permissive open-source license. You should feel free to use or adapt the  code as long as you follow the terms of the license,. If you make use of or build on the computational models or behavioural/neuroimaging analyses, we would appreciate that you cite the paper.
