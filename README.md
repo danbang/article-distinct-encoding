@@ -10,7 +10,7 @@ FigureX.m files will generate the specified plots from the paper by loading beha
 
 The paths in these scripts require altering the directory variable ‘repoBase’ to point to your local version of the repository.
 
-Unthresholded group-level statistical maps for main fMRI analyses reported in the paper are available on NeuroVault: https://neurovault.org/collections/3792/.
+Unthresholded group-level statistical maps supporting whole-brain analyses are available on NeuroVault: https://neurovault.org/collections/3792/.
 
 **Folders**
 
