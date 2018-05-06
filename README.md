@@ -1,12 +1,10 @@
 # article-distinct-encoding
 
-This repository contains analysis code for the following paper:
+This repository contains data and code supporting the following paper:
 
 Bang & Fleming (2018) “Distinct encoding of decision confidence in human medial prefrontal cortex”
 
-Anonymised behavioural data files and ROI data are included in the repository to enable replication of main analyses and figures in the paper. 
-
-FigureX.m files will generate the specified plots from the paper by loading behavioural data, model predictions (confidence model or HDDM) and/or fMRI data.
+FigureX.m files will generate the specified plots from the paper by loading behavioural data, model predictions and/or fMRI ROI data.
 
 The paths in these scripts require altering the directory variable ‘repoBase’ to point to your local version of the repository.
 
