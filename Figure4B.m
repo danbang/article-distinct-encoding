@@ -23,8 +23,8 @@ clear;
 subjects = [1:9 11:13 15:20 22:35];
 
 % ROIs
-ROIs= {'pgacc','V5','IPS','vstriatum','preSMA','rlPFC'};
-ROIs_for_plot= {'pgACC','MT+','IPS','ventral striatum','pre-SMA','rlPFC'};
+ROIs= {'pgacc'};
+ROIs_for_plot= {'pgACC'};
 
 % Paths [change 'repoBase' according to local setup]
 fs = filesep;
