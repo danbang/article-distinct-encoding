@@ -95,8 +95,9 @@ for i_sbj = 1:length(subjects)
     roi= roi_ts(include);
     
     %% binned ROI activity
-    thresh1= quantile(roi(concat==1),5); % confidence trials: 3 bins
-    thresh2= quantile(roi,5); % all trials: 6 bins
+    n_bins= 6;
+    thresh1= quantile(roi(concat==1),n_bins-1); % confidence trials
+    thresh2= quantile(roi,n_bins-1); % all trials
     clear roi_emp_cat roi_mod_cat;
     for i= 1:sum(include); roi_emp_cat(i)=sum(roi(i)>thresh1)+1; end;
     for i= 1:sum(include); roi_mod_cat(i)=sum(roi(i)>thresh2)+1; end;
@@ -106,6 +107,7 @@ for i_sbj = 1:length(subjects)
     for i= 1:length(thresh2)+1; roi_mod_con{i_roi}(i_sbj,i)= mean(conModel(roi_mod_cat==i)); end;
     
     %% trial-by-trial regression
+
     X= roi(concat==1)';
     Y= conEmpirical(concat==1)';
     [B,DEV,STATS]= glmfit(X,Y);
@@ -134,13 +136,13 @@ for i= 1:numel(c_mean);
 end
 plot(c_mean,'ko','MarkerFaceColor',[.5 .5 .5],'MarkerSize',20,'LineWidth',4);
 set(gca,'FontSize',24,'LineWidth',4);
-set(gca,'Xtick',[1:6],'XTickLabel',{'1','2','3','4','5','6',});
+set(gca,'Xtick',[1:n_bins]);
 set(gca,'Ytick',[.76:.02:.82]);
-xlim([0 7]);
+xlim([0 n_bins+1]);
 ylim([.76 .82]);
 xlabel('pgACC beta bin','FontSize',28,'FontWeight','normal');
 title(ROIs_for_plot{i_roi},'FontSize',28,'FontWeight','normal')
-ylabel('confidence','FontSize',28,'FontWeight','normal');
+ylabel('empirical confidence','FontSize',28,'FontWeight','normal');
 box('off')  
 end
 
@@ -155,12 +157,12 @@ for i= 1:numel(c_mean);
 end
 plot(c_mean,'ko','MarkerFaceColor',[.5 .5 .5],'MarkerSize',20,'LineWidth',4);
 set(gca,'FontSize',24,'LineWidth',4);
-set(gca,'Xtick',[1:6],'XTickLabel',{'1','2','3','4','5','6'});
+set(gca,'Xtick',[1:n_bins]);
 set(gca,'Ytick',[.76:.02:.82]);
-xlim([0 7]);
+xlim([0 n_bins+1]);
 ylim([.76 .82]);
 xlabel('pgACC beta bin','FontSize',28,'FontWeight','normal');
 title(ROIs_for_plot{i_roi},'FontSize',28,'FontWeight','normal')
-ylabel('confidence','FontSize',28,'FontWeight','normal');
+ylabel('model confidence','FontSize',28,'FontWeight','normal');
 box('off')  
 end
