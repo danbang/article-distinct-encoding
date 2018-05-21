@@ -2,7 +2,7 @@
 
 This repository contains data and code supporting the following paper:
 
-[Bang & Fleming (2018) “Distinct encoding of decision confidence in human medial prefrontal cortex”] (http://www.pnas.org/content/early/2018/05/18/1800795115)
+<a href="http://www.pnas.org/content/early/2018/05/18/1800795115">Bang & Fleming (2018) “Distinct encoding of decision confidence in human medial prefrontal cortex” </a>
 
 FigureX.m files will generate the specified plots from the paper by loading behavioural data, model predictions and/or fMRI ROI data.
 
