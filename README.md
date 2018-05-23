@@ -36,6 +36,10 @@ Contains scripts for permutation testing for analysis of ROI activity time cours
 
 Contains scripts for setting up GLMs of fMRI data. fMRI data were pre-processed using standard pipelines available here: https://github.com/metacoglab/MetaLabCore. All fMRI analyses were done using SPM 12 (www.fil.ion.ucl.ac.uk/spm). 
 
+*Upsample*
+
+Contains example script for creating ROI activity time courses.
+
 *Preprint*
 
 A preprint of this article can be found on <a href="https://www.biorxiv.org/content/early/2018/05/03/251330">bioRxiv</a>.
