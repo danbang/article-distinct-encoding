@@ -1,6 +1,6 @@
 # article-distinct-encoding
 
-This repository contains anonymised behavioural and neural data and code supporting:
+This repository contains anonymised data and code supporting:
 
 <a href="http://www.pnas.org/content/early/2018/05/18/1800795115">Bang & Fleming (2018) “Distinct encoding of decision confidence in human medial prefrontal cortex” PNAS </a>
 
